@@ -1,0 +1,27 @@
+:host {
+  width: 100%;
+}
+.card {
+  &-body {
+    padding: 0;
+  }
+  .form-group {
+    margin-top: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .form-label {
+    margin-left: 24px;
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 5px;
+  }
+}
+.button-wrapper {
+  justify-content: flex-end;
+  .btn {
+    margin-right: 48px;
+    margin-bottom: 34.5px;
+    margin-top: 34.5px;
+  }
+}

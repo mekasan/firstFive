@@ -1,0 +1,25 @@
+<div class="wrapper">
+  <ng-content></ng-content>
+  <div class="card">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-6 col-xs-12" [formGroup]="form">
+            <div class="form-group">
+              <input formControlName="user" type="text" class="form-control form-control-lg"  placeholder="Full name">
+              <label class="form-label">Name of the client you’re going to add in the line</label>
+            </div>
+        </div>
+        <div class="col-md-6 col-xs-12">
+          <div class="row button-wrapper">
+            <button class="btn btn-success"
+                    (click)="addClient()"
+                    [disabled]="!form.valid"
+            >
+              + Add to the line
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

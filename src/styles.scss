@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.wrapper {
+  max-width: 836px;
+  margin: 0 auto;
+}
+.card {
+  margin: 10px auto;
+  //max-width: 836px;
+  display: flex;
+}
+.shadow {
+  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%);
+}
+@media screen and (max-width: 575px){
+  .wrapper {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .card {
+    box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%);
+  }
+}
